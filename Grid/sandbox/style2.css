@@ -1,0 +1,28 @@
+.item{
+    background-color: beige;
+    border: 1px solid maroon;
+    border-radius: 5px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.item-1{
+    grid-column: span 2;
+}
+
+.item-3{
+    grid-row: span 2;
+}
+
+.item-5{
+    grid-column: span 2;
+}
